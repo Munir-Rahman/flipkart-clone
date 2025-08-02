@@ -1376,7 +1376,7 @@ a{
 /* Third Shop Collection Right Side Image */
 .Third-Collection-Right-Side-Image{
     background-color: transparent;
-    background-image: url(".../Images/Long image.jpg");
+    background-image: url("Images/Long image.jpg");
     background-size: cover;
 
 }
