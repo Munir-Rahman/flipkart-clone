@@ -1,0 +1,2049 @@
+/* || RESET */
+*{  
+    color: #000000 ;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+header,header:hover footer{
+    z-index: 3;
+}
+header{
+    background-color: #ffffff;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.navbar{
+    position: sticky;
+    display: flex;
+    height: 70px;
+    width: 1490px;
+    padding-left: 10px;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff ;
+}
+.nav-logo{
+    display: flex;
+    height:40px;
+    background-color: #ffffff ;
+}
+.logo{
+    margin-top: 2px;
+    margin-left: 18px;
+    background-image: url("Images/flipcart\ icon.svg");
+    background-size: cover;
+    height: 40px;
+    width: 160px;
+    background-color: #ffffff ;
+}
+/* Logo and Search */
+.logo-search{
+    margin-left: -10px;
+    display: flex;
+}
+.search{
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 1.18rem;
+    height: 100%;
+    width: 700px;
+    background-color: transparent;
+    border:none;
+}
+.search-icon{
+    background-color: transparent;
+    margin: 6px 8px 8px 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    width: 20px;
+}
+.search-icon-bar{
+    margin: 6px 20px;
+    border-radius: 8px;
+    background-color: #e5f9f2;
+    width: 742px;
+    height: 36px;
+    display: flex;
+    margin-left: 35px;
+    border: 1px solid #f0f0f0;
+}
+@media (max-width : 760px){
+    .search-icon-bar{
+        display: none;
+    }
+}
+
+
+.search-icon-bar:hover{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
+}
+.account{
+    align-items: center;
+    display: flex;
+    height: 30px;
+    width: 110px;
+    border:1px solid transparent;   
+    outline: none;
+    background-color: #ffffff ;
+    padding-top: 9px;
+}
+.account:hover{
+    background-color:#2a55e5;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
+}
+/* User Account Logo */
+.fa-circle-user{
+    align-items: center;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.button{
+    background-position: right 5px center;
+    font-size: 1rem;
+    margin-left: 6px;
+    height: 20px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    background-color: transparent ;
+    border: none;
+}
+.button:hover{
+    background-color:#2a55e5;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    height: 40px;
+    text-align: center;
+    width: 60px;
+    font-size: 1rem;
+    padding-left: 25px;
+    background-color: #ffffff ;
+}
+.cart-text{
+    padding-left: 8px;
+}
+.becomeseller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-wrap: nowrap;
+    padding-left: 50px;
+}
+.becomeseller-text{
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+/* Logo of About More */
+.more-out{
+    width: 150px;
+}
+.more{
+    margin-left: 10px;
+    margin-right: 0px;
+    padding: 14px;
+    text-align: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 0.8px solid transparent;
+}
+.more:hover{
+    border-radius: 10px;
+    background-color: rgba(174, 174, 174, 0.824);
+}
+/* Second Part of Page */
+/* Icons */
+
+main{
+    background-color: #f1f2f4;
+    height: 5200px;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #ffffff ;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 10px;
+    height: 120px;
+    width: 1490px;
+    border-top: 10px solid #f5f5f5;
+    justify-content: center;
+}
+.Box-Out{
+    width: 165px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Kilos{
+    background-color: #ffffff ;
+    align-items: center;
+    height: 80px;
+    width: 60px;
+    text-align: center;
+}
+.Kilos-logo{
+    background-color: #ffffff ;
+    height: 70px;
+    width: 60px;
+    background-image: url("Images/Kilos.png");
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+.Kilos-logo:hover{
+    background-color: #ffffff ;
+    scale: 1.10;
+    background-image: url("Images/Kilos.png");
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.Mobiles{
+    background-color: #ffffff ;
+    align-items: center;
+    height: 80px;
+    width: 60px;
+}
+.Mobiles-logo{
+    background-image: url("Images/Mobiles.png");
+    background-size: cover;
+    height: 70px;
+    width: 60px;
+    align-items: center;
+    text-align: center;
+}
+.Mobiles-logo:hover{
+    background-image: url("Images/Mobiles.png");
+    background-size: cover;
+    scale: 1.10;
+    align-items: center;
+    text-align: center;
+}
+.fashion{
+    background-color: #ffffff ;
+    align-items: center;
+    height: 80px;
+    width: 60px;
+}
+.fashion-logo{
+    background-image: url("Images/Fashion.png");
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    text-align: center;
+}
+.fashion-text{
+    height: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+.fashion-logo:hover{
+    background-image: url("Images/Fashion.png");
+    background-size: cover;
+    scale: 1.10;
+    align-items: center;
+    text-align: center;
+}
+.electronics{
+    background-color: #ffffff ;
+    align-items: center;
+    height: 80px;
+    width: 60px;
+}
+.electronics-logo{
+    background-image: url("Images/Electronics.png");
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    text-align: center;
+}
+.electronics-logo:hover{
+    background-image: url("Images/Electronics.png");
+    background-size: cover;
+    scale: 1.10;
+    align-items: center;
+    text-align: center;
+}
+.Homeandfurniture{
+    background-color: #ffffff ;
+    align-items: center;
+    height: 80px;
+    width: 60px;
+}
+.Homeandfurniture-logo{
+    background-image: url("Images/Home\ and\ Project.jpg");
+    background-size: cover;
+    height: 70px;
+    width: 60px;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.Homeandfurniture-logo:hover{
+    background-image: url("Images/Home\ and\ Project.jpg");
+    background-size: cover;
+    scale: 1.10;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+}
+span{
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 1rem;
+    color: #333333;
+}
+.appliance{
+    background-color: #ffffff ;
+    align-items: center;
+    height: 80px;
+    width: 60px;
+}
+.appliance-logo{
+    background-image: url("Images/Appliances.jpg");
+    background-size: cover;
+    height: 70px;
+    width: 60px;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+}
+.appliance-logo:hover{
+    background-image: url("Images/Appliances.jpg");
+    background-size: cover;
+    scale: 1.10;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+}
+.FlightBooking{
+    background-color: #ffffff ;
+    align-items: center;
+    height: 80px;
+    width: 60px;
+}
+.Flight-Booking-logo{
+    background-image: url("Images/Flight\ Booking.png");
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+}
+.Flight-Booking-logo:hover{
+    background-image: url("Images/Flight\ Booking.png");
+    background-size: cover;
+    scale: 1.10;
+    margin-left: 10px;
+    
+    align-items: center;
+    text-align: center;
+}
+.beautytoys{
+    background-color: #ffffff ;
+    align-items: center;
+    height: 80px;
+    width: 60px;
+}
+.beautytoys-logo{
+    background-image: url("Images/Beauty\ Toy\ and\ more.png");
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+}
+.beautytoys-logo:hover{
+    background-image: url("Images/Beauty\ Toy\ and\ more.png");
+    background-size: cover;
+    scale: 1.10;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+}
+.towwheelers{
+    background-color: #ffffff ;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 60px;
+}
+.towwheelers-logo{
+    background-image: url("Images/Two\ Wheeler.png");
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+}
+.towwheelers-logo:hover{
+    background-image: url("Images/Two\ Wheeler.png");
+    background-size: cover;
+    scale: 1.10;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+}
+/* Third Box of Page Images of Products */
+.Products-Outer{
+    padding-right: 15px;
+    width: 1490px;
+}
+.Products{
+    margin: 15px;
+    margin-left: 10px;
+    width: 1490px;
+    height: 280px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+.img{
+    scroll-snap-align: center;
+    flex: 0 0 100%;
+    width: 100%; 
+    height: auto;
+}
+.firstImage{
+    background-image: url("Images/1.Top Long image.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.secondImage{
+    background-image: url("Images/2.Top\ Long\ image.jpg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.thirdImage{
+    background-image: url("Images/3.Top\ Long\ image.jpg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.fourthImage{
+    background-image: url("Images/4.Top\ Long\ image.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.fifthImage{
+    background-image: url("Images/5.Top\ Long\ image.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.sixthImage{
+    background-image: url("Images/6.Top\ Long\ image.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.seventhImage{
+    background-image: url("Images/7.Top\ Long\ Image.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.eighthImage{
+    background-image: url("Images/8.Top\ Long\ Image.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.ninthImage{
+    background-image: url("Images/9.Top\ Long\ Image.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Third Box of Best of Electronics  */
+.third-box{
+    display: flex;
+    height: 350px;
+    width: 1490px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.bestelectronics-left{
+    margin-top: 3px;
+    height: 350px;
+    width: 1250px;
+    background-color: white;
+}
+.Top-text{
+    padding: 16px;
+    color: #1f1f1f;
+    font-size: 25px;
+    font-size: 1.5rem;
+    height: 30px;
+}
+
+.Electric-Items{
+    display: flex;
+}
+.Electronic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 244px;
+    width: 216px;
+}
+.Electronic-Anchor{
+    height: 228px;
+    width: 200px;
+    padding: 12px 24px;
+}
+.Electronics-Boxes-Div{
+    margin: 20px 0px;
+    margin-bottom: 15px;   
+    height: 152px;
+    width: 152px;
+}
+.FirstImage-Electronics{
+    background-image: url("Images/Headphones.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FirstImage-Electronics:hover{
+    background-image: url("Images/Headphones.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.SecondImage-Electronics{
+    background-image: url("Images/SmartWatches.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.SecondImage-Electronics:hover{
+    background-image: url("Images/SmartWatches.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.ThirdImage-Electronics{
+    background-image: url("Images/boAtsmartwatcches.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.ThirdImage-Electronics:hover{
+    background-image: url("Images/boAtsmartwatcches.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.FourthImage-Electronics{
+    background-image: url("Images/Projector.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FourthImage-Electronics:hover{
+    background-image: url("Images/Projector.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.FifthImage-Electronics{
+    background-image: url("Images/Monitors.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 120px;
+    width: 100%;
+}
+.FifthImage-Electronics:hover{
+    background-image: url("Images/Monitors.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.SixthImage-Electronics{
+    background-image: url("Images/Shover.jpeg");
+    background-size: cover;
+    margin: 15px 0px;
+    margin-left: -15px;
+    height: 100%;
+    width: 100%;
+}
+.SixthImage-Electronics:hover{
+    background-image: url("Images/Shover.jpeg");
+    background-size: cover;
+    margin: 15px 0px;
+    margin-left: -15px;
+    scale: 1.03;
+}
+.Sixth-image-text{
+    width: 145px;
+}
+/* Electronics-Right-side */
+.Electronics-Right-Side{
+    background-image: url("Images/ElectronicsRightSideImage.jpg");
+    background-size: cover;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: -5px;
+    height: 360px;
+    width: 230px;
+}
+
+/* Fourth Box */
+.Beautytoys-menu{
+    width: 1490px;
+    height: 355px;
+    background-color: white;
+    margin: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}   
+.Beauty-Items{
+    display: flex;
+}
+.Beauty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 244px;
+    width: 216px;
+}
+.Beauty-Anchor{
+    height: 228px;
+    width: 200px;
+    padding: 12px 24px;
+}
+.Beauty-Boxes-Div{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 152px;
+    width: 152px;
+}
+.FirstImage-Beauty{
+    background-image: url("Images/CoffeePowder.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 50%;
+}
+.FirstImage-Beauty:hover{
+    background-image: url("Images/CoffeePowder.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.SecondImage-Beauty{
+    background-image: url("Images/DryFruits.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.SecondImage-Beauty:hover{
+    background-image: url("Images/DryFruits.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.ThirdImage-Beauty{
+    background-image: url("Images/Stationary.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.ThirdImage-Beauty:hover{
+    background-image: url("Images/Stationary.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.FourthImage-Beauty{
+    background-image: url("Images/GearedCycle.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FourthImage-Beauty:hover{
+    background-image: url("Images/GearedCycle.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.FifthImage-Beauty{
+    background-image: url("Images/Remote.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FifthImage-Beauty:hover{
+    background-image: url("Images/Remote.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.SixthImage-Beauty{
+    background-image: url("Images/SoftToys.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    margin-left: -10px;
+    height: 100%;
+    width: 145px;
+}
+.SixthImage-Beauty:hover{
+    background-image: url("Images/SoftToys.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    margin-left: -10px;
+    scale: 1.03;
+    width: 101%;
+}
+.SeventhImage-Beauty{
+    background-image: url("Images/ActionToys.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 145px;
+}
+.SeventhImage-Beauty:hover{
+    background-image: url("Images/ActionToys.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+    width: 101%;
+}
+
+/* Fifth Box */
+.sportshealthcare{
+    width: 1490px;
+    height: 355px;
+    background-color: white;
+    margin: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.Sports-Items{
+    display: flex;
+}
+.Sports{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 244px;
+    width: 216px;
+}
+.Sports-Anchor{
+    height: 228px;
+    width: 200px;
+    padding: 12px 24px;
+}
+.Sports-Boxes-Div{
+    margin: 26px 0px;
+    margin-bottom: 15px;
+    height: 152px;
+    width: 152px;
+}
+.FirstImage-Sports{
+    background-image: url("Images/NonGearedCycle.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FirstImage-Sports:hover{
+    background-image: url("Images/NonGearedCycle.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.SecondImage-Sports{
+    background-image: url("Images/Treadmill.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.SecondImage-Sports:hover{
+    background-image: url("Images/Treadmill.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.ThirdImage-Sports{
+    background-image: url("Images/LearningEducation .jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.ThirdImage-Sports:hover{
+    background-image: url("Images/LearningEducation .jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.FourthImage-Sports{
+    background-image: url("Images/FoodSpreads.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FourthImage-Sports:hover{
+    background-image: url("Images/FoodSpreads.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.FifthImage-Sports{
+    background-image: url("Images/Yogamat.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FifthImage-Sports:hover{
+    background-image: url("Images/Yogamat.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+    width: 101%;
+}
+.SixthImage-Sports{
+    background-image: url("Images/Puzzle.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 150px;
+}
+.SixthImage-Sports:hover{
+    background-image: url("Images/Puzzle.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.SeventhImage-Sports{
+    background-image: url("Images/ElectricCycle.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 145px;
+}
+.SeventhImage-Sports:hover{
+    background-image: url("Images/ElectricCycle.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+/* First-Shop Collection */
+.First-ShopCollections{
+    width: 1490px;
+    height: 650px;
+    margin: 8px;
+    margin-top: 8px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Collection{
+    width: 33.33%;
+    height: 650px;
+    background-color: white;
+}
+.Collection-Items{
+    height: 290px;
+    width: 225px;
+}
+.In-Collection-Items{
+    height: 260px;
+    width: 195px;
+    margin: 10px;
+    padding: 12px 12px 0px;
+    border: 1px solid rgb(228, 227, 227);
+    border-radius: 6px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.Collection-bottom-First-text{
+    color: #000000;
+    display: flex;
+}
+.Collection-bottom-Second-text{
+    color: #108934;
+    display: flex;
+}
+.First-Collection{
+    margin-right: 10px;
+}
+.FirstCollection-Body{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 12px 4px;
+}
+.Collection-Item-Div{
+    height: 175px;
+    width: 175px;
+}
+.First-Item-First-Collection-Image{
+    background-image: url("Images/Men's Casual Shoes.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.First-Item-First-Collection-Image:hover{
+    background-image: url("Images/Men's Casual Shoes.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Second-Item-First-Collection-Image{
+    background-image: url("Images/Men's Boxers.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Second-Item-First-Collection-Image:hover{
+    background-image: url("Images/Men's Boxers.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Third-Item-First-Collection-Image{
+    background-image: url("Images/Men's Slippers.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Third-Item-First-Collection-Image:hover{
+    background-image: url("Images/Men's Slippers.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Fourth-Item-First-Collection-Image{
+    background-image: url("Images/Men'sSandals.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Fourth-Item-First-Collection-Image:hover{
+    background-image: url("Images/Men'sSandals.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+/* Second Collection */
+.SecondCollection-Body{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 12px 4px;
+}
+.First-Item-Second-Collection-Image{
+    background-image: url("Images/CasualShirts.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.First-Item-Second-Collection-Image:hover{
+    background-image: url("Images/CasualShirts.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Second-Item-Second-Collection-Image{
+    background-image: url("Images/Trousers.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Second-Item-Second-Collection-Image:hover{
+    background-image: url("Images/Trousers.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+
+.Third-Item-Second-Collection-Image{
+    background-image: url("Images/DryFruits.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Third-Item-Second-Collection-Image:hover{
+    background-image: url("Images/DryFruits.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Fourth-Item-Second-Collection-Image{
+    background-image: url("Images/Speaker.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 110%;
+}
+.Fourth-Item-Second-Collection-Image:hover{
+    background-image: url("Images/Speaker.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+/* Third Collection */
+.Third-Collection{
+    margin-left: 10px;
+}
+.ThirdCollection-Body{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 12px 4px;
+}
+.First-Item-Third-Collection-Image{
+    background-image: url("Images/CasualShirst2.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.First-Item-Third-Collection-Image:hover{
+    background-image: url("Images/CasualShirst2.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Second-Item-Third-Collection-Image{
+    background-image: url("Images/Nutseeds.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Second-Item-Third-Collection-Image:hover{
+    background-image: url("Images/Nutseeds.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Third-Item-Third-Collection-Image{
+    background-image: url("Images/Armselvers.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Third-Item-Third-Collection-Image:hover{
+    background-image: url("Images/Armselvers.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Fourth-Item-Third-Collection-Image{
+    background-image: url("Images/Woman Sarees.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Fourth-Item-Third-Collection-Image:hover{
+    background-image: url("Images/Woman Sarees.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Collection-Item-Div{
+    height: 175px;
+    width: 175px;
+}
+/* Second-Shop Collection */
+.Second-ShopCollections{
+    width: 1490px;
+    height: 650px;
+    margin: 8px;
+    margin-top: 8px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Fourth-Collection{
+    margin-right: 10px;
+}
+.FourthCollection-Body{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 12px 4px;
+}
+.First-Item-Fourth-Collection-Image{
+    background-image: url("Images/Men's Casual Shoes (2).jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.First-Item-Fourth-Collection-Image:hover{
+    background-image: url("Images/Men's Casual Shoes (2).jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Second-Item-Fourth-Collection-Image{
+    background-image: url("Images/Men's Boxers2.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Second-Item-Fourth-Collection-Image:hover{
+    background-image: url("Images/Men's Boxers2.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Third-Item-Fourth-Collection-Image{
+    background-image: url("Images/Casual Shirts2.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Third-Item-Fourth-Collection-Image:hover{
+    background-image: url("Images/Casual Shirts2.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Fourth-Item-Fourth-Collection-Image{
+    background-image: url("Images/Men's Trousers 2.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Fourth-Item-Fourth-Collection-Image:hover{
+    background-image: url("Images/Men's Trousers 2.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.FifthCollection-Body{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 12px 4px;
+}
+.First-Item-Fifth-Collection-Image{
+    background-image: url("Images/Face Wash.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.First-Item-Fifth-Collection-Image:hover{
+    background-image: url("Images/Face Wash.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Second-Item-Fifth-Collection-Image{
+    background-image: url("Images/Shampoo.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Second-Item-Fifth-Collection-Image:hover{
+    background-image: url("Images/Shampoo.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Third-Item-Fifth-Collection-Image{
+    background-image: url("Images/Sanitary Pad.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Third-Item-Fifth-Collection-Image:hover{
+    background-image: url("Images/Sanitary Pad.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Fourth-Item-Fifth-Collection-Image{
+    background-image: url("Images/Moistrauizer.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Fourth-Item-Fifth-Collection-Image:hover{
+    background-image: url("Images/Moistrauizer.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Sixth-Collection{
+    margin-left: 10px;
+}
+.SixthCollection-Body{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 12px 4px;
+}
+.First-Item-Sixth-Collection-Image{
+    background-image: url("Images/Mosquito Nets 2.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.First-Item-Sixth-Collection-Image:hover{
+    background-image: url("Images/Mosquito Nets 2.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Second-Item-Sixth-Collection-Image{
+    background-image: url("Images/bad sheets.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Second-Item-Sixth-Collection-Image:hover{
+    background-image: url("Images/bad sheets.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Third-Item-Sixth-Collection-Image{
+    background-image: url("Images/Portable Laptop Tables.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Third-Item-Sixth-Collection-Image:hover{
+    background-image: url("Images/Portable Laptop Tables.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Fourth-Item-Sixth-Collection-Image{
+    background-image: url("Images/Shoe Rak.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Fourth-Item-Sixth-Collection-Image:hover{
+    background-image: url("Images/Shoe Rak.jpg");
+    background-size: cover;
+    scale: 1.03;
+}
+/* Third-Shop Collection */
+.Third-ShopCollections{
+    width: 1490px;
+    height: 650px;
+    margin: 8px;
+    margin-top: 8px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Seventh-Collection{
+    margin-right: 10px;
+}
+.Eighth-Collection{
+    margin-right: 10px;
+}
+.SeventhCollection-Body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.First-Item-Seventh-Collection-Image{
+    background-image: url("Images/Cameras.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.First-Item-Seventh-Collection-Image:hover{
+    background-image: url("Images/Cameras.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Second-Item-Seventh-Collection-Image{
+    background-image: url("Images/Smart Speakers.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Second-Item-Seventh-Collection-Image:hover{
+    background-image: url("Images/Smart Speakers.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Third-Item-Seventh-Collection-Image{
+    background-image: url("Images/Wireless Headphones.jpeg");
+    background-size: cover;
+    height: 110%;
+    width: 100%;
+}
+.Third-Item-Seventh-Collection-Image:hover{
+    background-image: url("Images/Wireless Headphones.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Fourth-Item-Seventh-Collection-Image{
+    background-image: url("Images/Aircoolers.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Fourth-Item-Seventh-Collection-Image:hover{
+    background-image: url("Images/Aircoolers.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.EighthCollection-Body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.First-Item-Eighth-Collection-Image{
+    background-image: url("Images/Mosquito Nets 2.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.First-Item-Eighth-Collection-Image:hover{
+    background-image: url("Images/Mosquito Nets 2.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Second-Item-Eighth-Collection-Image{
+    background-image: url("Images/Wallpapers.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Second-Item-Eighth-Collection-Image:hover{
+    background-image: url("Images/Wallpapers.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Third-Item-Eighth-Collection-Image{
+    background-image: url("Images/Waterbottels.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Third-Item-Eighth-Collection-Image:hover{
+    background-image: url("Images/Waterbottels.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+.Fourth-Item-Eighth-Collection-Image{
+    background-image: url("Images/wallclocks.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.Fourth-Item-Eighth-Collection-Image:hover{
+    background-image: url("Images/wallclocks.jpeg");
+    background-size: cover;
+    scale: 1.03;
+}
+
+/* Third Shop Collection Right Side Image */
+.Third-Collection-Right-Side-Image{
+    background-color: transparent;
+    background-image: url("Images/Long image.jpg");
+    background-size: cover;
+
+}
+
+.Furniture-menu{
+    width: 1490px;
+    height: 355px;
+    background-color: white;
+    margin: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}   
+.Furniture-Items{
+    display: flex;
+}
+.Furniture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 244px;
+    width: 216px;
+}
+.Furniture-Anchor{
+    height: 228px;
+    width: 200px;
+    padding: 12px 24px;
+}
+.Furniture-Boxes-Div{
+    height: 152px;
+    width: 152px;
+    margin-bottom: 15px;
+}
+.FirstImage-Furniture{
+    background-image: url("Images/Mattresses.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FirstImage-Furniture:hover{
+    background-image: url("Images/Mattresses.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.SecondImage-Furniture{
+    background-image: url("Images/Sofa and sectional.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.SecondImage-Furniture:hover{
+    background-image: url("Images/Sofa and sectional.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.ThirdImage-Furniture{
+    background-image: url("Images/Sleeperss.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.ThirdImage-Furniture:hover{
+    background-image: url("Images/Sleeperss.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.FourthImage-Furniture{
+    background-image: url("Images/Beds.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FourthImage-Furniture:hover{
+    background-image: url("Images/Beds.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.FifthImage-Furniture{
+    background-image: url("Images/TV Units.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FifthImage-Furniture:hover{
+    background-image: url("Images/TV Units.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.SixthImage-Furniture{
+    background-image: url("Images/Sofa Beds.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.SixthImage-Furniture:hover{
+    background-image: url("Images/Sofa Beds.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.SeventhImage-Furniture{
+    background-image: url("Images/Sofa Set.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.SeventhImage-Furniture:hover{
+    background-image: url("Images/Sofa Set.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+/* Fashion Top Deals */
+.FashionTopDeals-menu{
+    width: 1490px;
+    height: 355px;
+    background-color: white;
+    margin: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}   
+.FashionTopDeals-Items{
+    display: flex;
+}
+.FashionTopDeals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 244px;
+    width: 216px;
+}
+.FashionTopDeals-Anchor{
+    height: 228px;
+    width: 200px;
+    padding: 12px 24px;
+}
+.Fashion-Boxes-Div{
+    height: 152px;
+    width: 152px;
+    margin: 26px 0px;
+}
+.FirstImage-FashionTopDeals{
+    background-image: url("Images/Sandals.jpg");
+    background-size: cover;
+    margin: 26px 0px ;
+    height: 100%;
+    width: 100%;
+}
+.FirstImage-FashionTopDeals:hover{
+    background-image: url("Images/Sandals.jpg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.SecondImage-FashionTopDeals{
+    background-image: url("Images/Shirt.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 152px;
+    width: 152px;
+}
+.SecondImage-FashionTopDeals:hover{
+    background-image: url("Images/Shirt.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.ThirdImage-FashionTopDeals{
+    background-image: url("Images/Selveers.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 152px;
+    width: 152px;
+}
+.ThirdImage-FashionTopDeals:hover{
+    background-image: url("Images/Selveers.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.FourthImage-FashionTopDeals{
+    background-image: url("Images/Trousers.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 152px;
+    width: 152px;
+}
+.FourthImage-FashionTopDeals:hover{
+    background-image: url("Images/Trousers.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.FifthImage-FashionTopDeals{
+    background-image: url("Images/CasualShirts.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 152px;
+    width: 152px;
+}
+.FifthImage-FashionTopDeals:hover{
+    background-image: url("Images/CasualShirts.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.SixthImage-FashionTopDeals{
+    background-image: url("Images/Fashion.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 152px;
+    width: 152px;
+}
+.SixthImage-FashionTopDeals:hover{
+    background-image: url("Images/Fashion.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+.SeventhImage-FashionTopDeals{
+    background-image: url("Images/Big Details.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 152px;
+    width: 152px;
+}
+.SeventhImage-FashionTopDeals:hover{
+    background-image: url("Images/Big Details.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.03;
+}
+/* Top Deals */
+.TopDeals-menu{
+    width: 1490px;
+    height: 355px;
+    background-color: white;
+    margin: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}   
+.TopDeals-Items{
+    display: flex;
+}
+.TopDeals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 244px;
+    width: 216px;
+}
+.TopDeals-Anchor{
+    height: 228px;
+    width: 200px;
+    padding: 12px 24px;
+}
+.TopDeals-Boxes-Div{
+    height: 152px;
+    width: 152px;
+    margin: 26px 0px;
+}
+.FirstImage-TopDeals{
+    background-image: url("Images/boAtsmartwatcches.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FirstImage-TopDeals:hover{
+    background-image: url("Images/boAtsmartwatcches.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.SecondImage-TopDeals{
+    background-image: url("Images/Cameras.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.SecondImage-TopDeals:hover{
+    background-image: url("Images/Cameras.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.ThirdImage-TopDeals{
+    background-image: url("Images/Bigs.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.ThirdImage-TopDeals:hover{
+    background-image: url("Images/Bigs.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.FourthImage-TopDeals{
+    background-image: url("Images/Men's Trousers 2.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FourthImage-TopDeals:hover{
+    background-image: url("Images/Men's Trousers 2.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.FifthImage-TopDeals{
+    background-image: url("Images/SmartWatches.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FifthImage-TopDeals:hover{
+    background-image: url("Images/SmartWatches.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.SixthImage-TopDeals{
+    background-image: url("Images/Sofa and sectional.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.SixthImage-TopDeals:hover{
+    background-image: url("Images/Sofa and sectional.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.Sixth-image-text{
+    text-wrap: nowrap;
+}
+.SeventhImage-TopDeals{
+    background-image: url("Images/Workout.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.SeventhImage-TopDeals:hover{
+    background-image: url("Images/Workout.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+/* Pick Your Style */
+.PickStyle-menu{
+    width: 1490px;
+    height: 355px;
+    background-color: white;
+    margin: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}   
+.PickStyle-Items{
+    display: flex;
+}
+.PickStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 244px;
+    width: 216px;
+}
+.PickStyle-Anchor{
+    height: 228px;
+    width: 200px;
+    padding: 12px 24px;
+}
+.PickStyle-Boxes-Div{
+    height: 152px;
+    width: 152px;
+    margin: 26px 0px;
+}
+.FirstImage-PickStyle{
+    background-image: url("Images/Trouser.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FirstImage-PickStyle:hover{
+    background-image: url("Images/Trouser.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.SecondImage-PickStyle{
+    background-image: url("Images/Big.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.SecondImage-PickStyle:hover{
+    background-image: url("Images/Big.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.ThirdImage-PickStyle{
+    background-image: url("Images/Ma.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.ThirdImage-PickStyle:hover{
+    background-image: url("Images/Ma.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.FourthImage-PickStyle{
+    background-image: url("Images/TV\ Units.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FourthImage-PickStyle:hover{
+    background-image: url("Images/TV\ Units.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.FifthImage-PickStyle{
+    background-image: url("Images/Jouser.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.FifthImage-PickStyle:hover{
+    background-image: url("Images/Jouser.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.SixthImage-PickStyle{
+    background-image: url("Images/Shirt.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.SixthImage-PickStyle:hover{
+    background-image: url("Images/Shirt.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+.SeventhImage-PickStyle{
+    background-image: url("Images/CasualShirst2.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    height: 100%;
+    width: 100%;
+}
+.SeventhImage-PickStyle:hover{
+    background-image: url("Images/CasualShirst2.jpeg");
+    background-size: cover;
+    margin: 26px 0px;
+    scale: 1.02;
+}
+
+/* All Products Images Text   */
+.First-image-text{
+    font-size: 0.9rem;
+    color: #565656;
+}
+.Second-image-text{
+    font-size: 0.9rem;
+    color: #565656;
+}
+.Third-image-text{
+    font-size: 0.9rem;
+    color: #565656;
+}
+.Fourth-image-text{
+    font-size: 0.9rem;
+    color: #565656;
+}
+.Fifth-image-text{
+    font-size: 0.9rem;
+    color: #565656;
+}
+.Sixth-image-text{
+    font-size: 0.9rem;
+    color: #565656;
+}
+.Seventh-image-text{
+    font-size: 0.9rem;
+    color: #565656;
+}
+
+/* Top Stories at End of Page */
+.TopStories{
+    height: 580px;
+    width: 1470px;
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-bottom: 1px solid #e0dede;
+    border-bottom: 1px solid transparent;
+}
+.TopStories-Text{
+    color: #565656;
+    padding: 14px 0px;
+    margin: 14px 0px 0px;
+    font-weight: bold;
+}
+.Top-Stories-Text-Anchor{
+    color: #565656;
+}
+.Footer-Title{
+    font-size: 14px;
+}
+.Footer-Moretext{
+    padding: 0px 5px;
+    font-size: 13px;
+    border-right: 1px solid gray;
+    color: #565656;
+}
+.Information{
+    height: 2160px;
+    /* width: auto; */
+    width: 1470px;
+    padding: 25px;
+    background-color: #f5f5f5;
+    color: #878787;
+}
+.Titles{
+    color: #878787;
+    font-size: 15px;
+}
+.Footer-text{
+    color: #878787;
+}
+
+.email{
+    color: #878787;
+}
+/* Black Footer */
+.Black-Footer{
+    height: 370px;
+    /* width: auto; */
+    width: 1520px;
+    background-color: #242323;
+}
+/* Top of Footer */
+.Black-Footer-Top{
+    height: 240px;
+    padding: 40px 15px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Footer-Link-Top{
+    color: #747373;
+    font-size: 15px;
+    margin: 0px 0px 12px;
+}
+.Footer-Link{
+    color: #ffffff;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    height: 18px;
+    width: 100%;
+}
+.Footer-Link:hover{
+    text-decoration: underline white;
+    height: 18px;
+    width: 100%;
+}
+.About-Menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.GroupCompanies-Menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Help-Menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Consumer-Menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Office-Add-Menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Mail-Us{
+    color: #747373;
+    margin: 0px 0px 12px;
+}
+.Office-Add{
+    margin: 0px 0px 12px;
+}
+.Address-Menu{
+    font-size: 15px;
+    border-left: 1px solid #747373;
+    padding: 0px 0px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Address{
+    color: #ffffff;
+    font-size: 13px;
+    width: 100%;
+    height: 18px;
+}
+.Office-Add{
+    color: #747373;
+    font-size: 15px;
+}
+.Social{
+    color: #747373;
+    font-size: 15px;
+    margin: 0px 0px 12px;
+}
+.SocialMedia-Logo{
+    display: flex;
+    justify-items: right;
+    justify-content: space-evenly;
+    margin-left: -40px;
+}
+.telephone{
+    color: #2847F0;                                                                                                                                    
+}
+
+/* Footer Bottom */
+.Black-Footer-Bottom{
+    border-top: 1px solid #747373;
+    padding: 25px 0px;
+    margin-top: 20px;
+    -webkit-text-fill-color: #ffffff;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-evenly;
+}
