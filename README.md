@@ -28,7 +28,7 @@ A visually accurate and responsive clone of the Flipkart.com landing page built 
 
 ## 🚀 Live Demo
 
-🌐 [View Website on Vercel](https://your-deployment-link.vercel.app)  
+🌐 (https://flipkart-clone-munir-rahmans-projects.vercel.app/)  
 *(Replace with your real deployment link)*
 
 ---
